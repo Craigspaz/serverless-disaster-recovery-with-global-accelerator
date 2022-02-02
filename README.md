@@ -39,7 +39,7 @@ Remember, with AWS Global Accelerator you are provided 2 global static public IP
 
 AWS Lambda function retrieves the data from an Amazon DynamoDB Global table that automatically replicates the changes among the tables spread around the globe. In this case the tables are in Ireland and N.Virginia regions. 
 
-## Test the architecutre deployed
+## Test the architecture deployed
 
 When the 2 AWS CloudFormation templates are deployed, go to the second template to the outputs section and copy and paste on your browser the DNS of the AWS Global Accelerator recently created. Depending upon your location, your request is going to be forwarded to the closest region (between ireland and N.Virginia):
 
