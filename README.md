@@ -15,15 +15,11 @@ The architecture deployed is comprised of 2 VPCs: 1 in eu-west-1 and the other i
 
 ## Launch the template
 
-2. Deploy the AWS Cloud Formation template clicking on the button below:
-
-[![Launch CFN stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://eu-west-1.console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/quickcreate?templateUrl=https://serverless-dr-with-global-accelerator.s3.eu-west-1.amazonaws.com/Templates/vpc-first-region.yaml)
+2. Deploy the AWS Cloud Formation template by downloading the "vpc-first-region.yaml" file located in the "Templates" folder in this repo.
 
 NOTE: This template will be deployed in Ireland region and it will take 5 min. to deploy approx.
 
-3. Once the first template has been deployed, go ahead and deploy this second one clicking the button below. Make sure to be on N.Virginia before deploying it:
-
-[![Launch CFN stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://eu-west-1.console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/quickcreate?templateUrl=https://serverless-dr-with-global-accelerator.s3.eu-west-1.amazonaws.com/Templates/vpc-second-region.yaml)
+3. Once the first template has been deployed, go ahead and deploy the second, by downloading the "vpc-second-region.yaml" file located in the "Templates" folder in this repo. Make sure to be on N.Virginia before deploying it.
 
 In the second template, in the parameters section, make sure to enter the Application Load Balancer ARN. You will find it in the outputs section of the CloudFormation template deployed in Ireland:
 
